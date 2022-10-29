@@ -77,9 +77,9 @@ jobs:
           keys: [frontend-build]
       - run:
           name: run frontend test
-          command:
-            cd frontend
-            npm install
+          command: |
+            cd frontend 
+            npm install 
             npm run test
   # test-backend:
   #   docker:
